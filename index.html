@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <title>Flight Reservation System</title>
+</head>
+
+<body>
+  <div class="form " id="screen1">
+    <div class="title">Air Reservation
+    </div>
+    <div class="input-container ic1">
+      <input id="source" class="input" type="text" placeholder=" " />
+      <div class="cut"></div>
+      <label for="source" class="placeholder">Source</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="destination" class="input" type="text" placeholder=" " />
+      <div class="cut"></div>
+      <label for="destination" class="placeholder">Destination</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="numSeats" class="input" type="number" placeholder=" " />
+      <div class="cut"></div>
+      <label for="numSeats" class="placeholder"># of Seats</>
+    </div>
+    <button id="submitBtn" class="submit">Submit</button>
+  </div>
+
+  <div id="screen2" class="screen">
+    
+    <div id="filteredFlights" class="details-screen ">
+    </div>
+    <div class="sort-options">
+      <label for="sortKey">Sort by:</label>
+      <select id="sortKey">
+        <option value="price">price</option>
+        <option value="duration">duration</option>
+        <option value="airline">airline</option>
+      </select>
+
+      <label for="sortOrder">Order:</label>
+      <select id="sortOrder">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+
+      <button id="applySort">Apply Sort</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
